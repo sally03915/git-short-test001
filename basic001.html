@@ -23,7 +23,7 @@
 
         #STEP2 : 이메일 설정하기
         git config --global user.email "your_email"
-        > Github가입시 사용한 이메일적기
+        ■ Github가입시 사용한 이메일적기
 
 
         #STEP3 : 정보 확인하기
@@ -31,6 +31,52 @@
         </pre>
 
 
+        <h3 class="panel-heading">프로젝트작성 후 파일올리기</h3>
+        <pre>
+            #STEP4 : 초기화
+            git init
+
+
+            #STEP5 : 추가할 파일 확인
+            git add .
+
+            ■   . 은  프로젝트내의 모든 파일
+            ■    모든파일     올리기      git add  .
+            ■    선택적으로 올리기      git add index.jsp
+
+
+            #STEP6 : 기록남기기
+            git status
+
+            git commit -m "first commit"
+            ■   -m  message   "기록버젼남기기-메시지"
+
+
+
+            #STEP7 :  Github repository(원격저장소)랑 내 로컬 프로젝트(로컬저장소)랑 연결
+            git remote add origin https://github.com/sally03915/git-short-test001.git
+
+
+            #STEP8 : 연결확인
+            git remote -v
+
+
+
+            #STEP9 :  Github repository(원격저장소)로 올리기
+            git push origin master
+        </pre>
+
+
+        <h3 class="panel-heading">수정 후 파일올리기</h3>
+        <pre>
+            #STEP10 :  수정 후 업데이트
+            #10-1.  추가파일 확인
+            git add .
+            #10-2.  히스토리 만들기
+            git commit -m "first commit"
+            #10-3.  Github로 올리기
+            git push origin master
+        </pre>
     </div>
 </body>
 </html>
